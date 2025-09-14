@@ -18,13 +18,13 @@ module.exports = {
 			'warn',
 			'tab',
 			{
-				SwitchCase: 1, 
+				SwitchCase: 1,
 				ignoreComments: true,
 				ObjectExpression: 1,
 			},
 		],
-		quotes: [ 'warn', 'single' ],
-		semi: [ 'warn', 'never' ],
+		quotes: ['warn', 'single'],
+		semi: ['warn', 'never'],
 		'no-empty': 0,
 		'@typescript-eslint/ban-ts-comment': 0,
 		'no-explicit-any': 0,
@@ -32,13 +32,13 @@ module.exports = {
 		'object-shorthand': ['warn', 'properties'],
 		'no-extra-parens': ['warn', 'functions'],
 		'keyword-spacing': [
-			'warn', 
+			'warn',
 			{
-				after: true, 
+				after: true,
 				overrides: {
-					if: { after: false }, 
-					switch: { after: true }, 
-					for: { after: false }, 
+					if: { after: false },
+					switch: { after: true },
+					for: { after: false },
 					catch: { after: true },
 					while: { after: false },
 					else: { after: true },
@@ -54,17 +54,17 @@ module.exports = {
 		],
 		'prefer-const': 2,
 		'key-spacing': [
-			'warn', { 
-				beforeColon: false, 
-				afterColon: true, 
+			'warn', {
+				beforeColon: false,
+				afterColon: true,
 			},
 		],
 		'lines-between-class-members': [
-			'warn', 
-			'always', 
+			'warn',
+			'always',
 			{ exceptAfterSingleLine: true },
 		],
-		'multiline-ternary': [ 'warn', 'always-multiline' ],
+		'multiline-ternary': ['warn', 'always-multiline'],
 		'new-cap': 0,
 		// 'new-cap': [
 		// 	'warn', 
@@ -80,8 +80,8 @@ module.exports = {
 		'object-shorthand': ['warn', 'properties'],
 		'arrow-spacing': [
 			'warn', {
-				before: true, 
-				after: true, 
+				before: true,
+				after: true,
 			},
 		],
 		'comma-dangle': [
@@ -90,9 +90,9 @@ module.exports = {
 				'objects': 'always-multiline',
 				'imports': 'always-multiline',
 				'exports': 'always-multiline',
-		  	},
+			},
 		],
-		'object-curly-spacing': [ 'warn', 'always' ],
+		'object-curly-spacing': ['warn', 'always'],
 		'import-helpers/order-imports': [
 			'warn',
 			{

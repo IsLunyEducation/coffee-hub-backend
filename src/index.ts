@@ -1,1 +1,3 @@
-console.log('Hello World')
+import { app } from './main/app'
+
+app.listen({ port: 8080 })
