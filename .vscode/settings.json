@@ -1,8 +1,9 @@
 {
-	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": "explicit",
-	},
-	"editor.formatOnSave": true,
-	"editor.tabSize": 4,
-	"editor.insertSpaces": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+    },
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true
 }

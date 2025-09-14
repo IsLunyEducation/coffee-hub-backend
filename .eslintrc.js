@@ -1,3 +1,5 @@
+const { before } = require('node:test')
+
 module.exports = {
 	env: {
 		es2021: true,
@@ -35,21 +37,8 @@ module.exports = {
 			'warn',
 			{
 				after: true,
-				overrides: {
-					if: { after: false },
-					switch: { after: true },
-					for: { after: false },
-					catch: { after: true },
-					while: { after: false },
-					else: { after: true },
-					var: { after: true },
-					let: { after: true },
-					const: { after: true },
-					typeof: { after: true },
-					return: { after: true },
-					export: { after: true },
-					import: { after: true },
-				},
+				before: true,
+
 			},
 		],
 		'prefer-const': 2,
@@ -100,6 +89,10 @@ module.exports = {
 				groups: [
 					['/node\:/'],
 					'module',
+					['/^@/infra/'],
+					['/^@/core/'],
+					['/^@/domain/'],
+					['/^@/utils/'],
 					['/@//'],
 					['/@types/', '/typing*/'],
 					['parent', 'sibling', 'index'],
